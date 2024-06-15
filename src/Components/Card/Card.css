@@ -1,0 +1,63 @@
+/* src/CardComponent.css */
+
+.custom-card {
+    /* width: 18rem; */
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.custom-card .icon-container {
+    width: 4rem;
+    height: 4rem;
+    background-color: #F5F5F5;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.custom-card:hover .icon-container {
+    width: 4rem;
+    height: 4rem;
+    background-color: blue;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.custom-icon {
+    font-size: 2rem;
+    color: #0078FF;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.custom-card:hover .custom-icon {
+    color: rgb(255, 255, 255);
+    /* opacity: 0.8; */
+    cursor: pointer;
+}
+
+.custom-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.card-title,
+.card-text {
+    margin: 0.5rem 0;
+}
